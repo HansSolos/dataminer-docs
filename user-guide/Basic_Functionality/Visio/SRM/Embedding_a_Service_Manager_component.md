@@ -22,13 +22,15 @@ Configure the following shape data fields on the shape that is to contain the Se
 1. To further configure the component, add the shape data field **ComponentOptions**, and specify the necessary options as its value. Separate the options by semicolons (";"). The following options are supported:
 
    - **AutoLoadExternalChanges=** : When set to *true*, external changes are automatically loaded, if there have been no local changes. This keeps an information bar from being displayed at the bottom of the visual overview, asking the user to load or discard the external changes.
-   - **AutoIgnoreExternalChanges=** : Available from DataMiner 10.0.13 onwards. When set to *true*, external changes are automatically discarded. This keeps an information bar from being displayed at the bottom of the visual overview, asking the user to load or discard the external changes.
-   - **HideAddButton** : Available from DataMiner 10.2.6/10.3.0 onwards. When set to *true*, no options to add a service definition will be displayed.
-   - **HideChildFunctions=*X*** : Available from DataMiner 9.5.5 onwards. Allows you to filter on particular functions that should not be displayed in the component. “X” should be a collection of GUIDs, separated by a comma. Alternatively, you can also specify *\** or *ALL*, to filter all child functions. Note that if you specify the parent GUID of a particular function, this will also block all child functions of that function. The GUIDs can be found in the function XMLs.
-   - **HideDeleteButton** : Available from DataMiner 10.2.6/10.3.0 onwards. When set to *true*, no options to delete a service definition will be displayed.
+   - **AutoIgnoreExternalChanges=** : Available from DataMiner 10.0.13 onwards. When set to *true*, external changes are automatically discarded. This keeps an information bar from being displayed at the bottom of the visual overview, asking the user to load or discard the external changes. 
+   - **HideSaveDiscardButtons=** : When set to *true*, no options to save or discard a service definition will be displayed.
+   - **HideAddButton=** : Available from DataMiner 10.2.6/10.3.0 onwards. When set to *true*, no options to add a service definition will be displayed.
+   - **HideDeleteButton=** : Available from DataMiner 10.2.6/10.3.0 onwards. When set to *true*, no options to delete a service definition will be displayed.
    - **HideHeader=** : When set to *true*, hides the service definition header (which includes the service definition name and description).
    - **HideTabs=** : When set to *true*, hides the tab selection, so that only the diagram tab is displayed.
+   - **HideChildFunctions=*X*** : Available from DataMiner 9.5.5 onwards. Allows you to filter on particular functions that should not be displayed in the component. “X” should be a collection of GUIDs, separated by a comma. Alternatively, you can also specify *\** or *ALL*, to filter all child functions. Note that if you specify the parent GUID of a particular function, this will also block all child functions of that function. The GUIDs can be found in the function XMLs.
    - **HideNodeConfiguration=** : When set to *true*, hides the lower part of the diagram, where the selected node can be configured.
+   - **ShowNodeIDs=** : Available from DataMiner 10.0.0/10.0.2 onwards. When set to *true*, displays the node IDs of the service definition.
    - **HideFunctionsTree=** : When set to *true*, hides the tree view on the left-hand side with functions to drag and drop. This will typically be used together with the “ReadOnly=” option.
    - **Interface=**: Determines which part of the Service Manager user interface is displayed. Can be set to the following values:
 
@@ -38,7 +40,6 @@ Configure the following shape data fields on the shape that is to contain the Se
 
    - **ReadOnly=** : When set to *true*, prevents the user from making any changes to the service definition.
    - **SessionVariablePrefix=*X*** : Defines an optional prefix (in this case “X”) for all session variable names linked with this component.
-   - **ShowNodeIDs=** : Available from DataMiner 10.0.0/10.0.2 onwards. When set to *true*, displays the node IDs of the service definition.
 
    > [!NOTE]
    >
