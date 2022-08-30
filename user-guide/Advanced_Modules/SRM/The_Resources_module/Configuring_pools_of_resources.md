@@ -13,6 +13,8 @@ This section contains the following topics:
 - [Adding resource property definitions](#adding-resource-property-definitions)
 
 - [Adding resources to a pool](#adding-resources-to-a-pool)
+- 
+- [Removing resources from a pool](#removing-resources-from-a-pool)
 
 - [Adding a virtual function as a resource](#adding-a-virtual-function-as-a-resource)
 
@@ -132,6 +134,21 @@ To add a resource to a pool prior to DataMiner 10.1.5:
    > If you select an existing resource in the *resources* tab, you can view information on its configuration if you expand the *Properties* section at the bottom of the tab. This includes a button that allows you to quickly navigate to the element linked to the resource. Buttons are also available that allow you to add, edit or delete properties of a resource.
 
 1. Click *OK*.
+
+## Removing resources from a pool
+
+Besides deleting a resource from the system, it is also possible to remove a resource from an existing resource pool using DataMiner 10.2.0/10.2.10 or higher:
+
+1. Make sure the existing resource that you want to remove, is selected in the resource pool that you want to remove from.
+
+1. Right-click on the selected resource and press *Remove from pool*.
+
+   > [!NOTE]
+   > The following conditions must be met in order to see the item *Remove from pool* enabled:
+   > - The selected pool is not the (uncategorized) pool
+   > - The user has the permission to edit resources
+   > - The resource is valid, is unmodified and is existing.
+
 
 ## Adding a virtual function as a resource
 
